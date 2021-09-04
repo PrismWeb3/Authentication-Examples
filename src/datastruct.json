@@ -1,0 +1,21 @@
+{
+    "users": [
+        {
+            "id": "SOME_USER_ID",
+            "username": "SOME_USERNAME",
+            "email": "OPTIONAL_SOME_EMAIL",
+            "devices": [
+                "PUB_KEY",
+                "PUB_KEY",
+                "PUB_KEY",
+                "PUB_KEY"
+            ],
+            
+            "sym_keys": [
+                {"key": "AES_KEY", "valid": false},
+                {"key": "AES_KEY", "valid": false},
+                {"key": "AES_KEY", "valid": true}
+            ]
+        }
+    ]
+}
