@@ -25,16 +25,6 @@ pub fn sign_new_device(qr: String) -> NewDevicePubKey {
         unsigned: new_device_keypair.public_key_to_pem().unwrap(),
     };
 
-    // Remove me!
-    /* return verify_new_device(
-        signed_public_key,
-        new_device_keypair.public_key_to_pem().unwrap(),
-        PKey::from_rsa(
-            Rsa::public_key_from_pem(&temp_keypair.public_key_to_pem().unwrap()).unwrap(),
-        )
-        .unwrap(),
-    );*/
-
     /*
     1. Send the Signed Public Key to Prism's Authentication Authority, along with an unsigned copy;
     2. Wait for a response message from the Authentication Authority;

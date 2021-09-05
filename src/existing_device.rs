@@ -29,9 +29,6 @@ pub fn generate_temp_key() -> PKey<Private> {
     */
     return PKey::from_rsa(temp_keypair).unwrap();
 
-    // Remove me!
-    // return sign_new_device(String::from_utf8(temp_keypair.private_key_to_pem().unwrap()).unwrap());
-
     /*
     1. Display qr.svg to the user;
     2. Wait for a response from Prism's Authentication Authority, then start step VIII
