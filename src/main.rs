@@ -28,7 +28,7 @@ fn main() {
      To prove this is true, however, the below function is interchangable between the two;
     */
     existing_device()
-    // OR new_device()
+    // OR new_device(None);
 }
 
 fn new_device(temp_keypair: Option<String>) -> Option<NewDevicePubKey> {
